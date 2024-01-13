@@ -1,0 +1,83 @@
+$button-b-followed: #262c40;
+$button-b-followed-hover: #414e6e;
+
+.tw-Follow-Wrapper__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-height: 3rem;
+	gap: .4rem;
+}
+
+.tw-Follow-Wrapper__left-content {
+	align-self: flex-start;
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+}
+
+.tw-Follow-Wrapper__image {
+	width: 2.5rem;
+	height: 2.5rem;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.tw-Follow-Wrapper__text {
+	display: flex;
+	flex-direction: column;
+	max-height: 2.5rem;
+}
+
+.tw-Follow-Wrapper__text__name {
+	font-size: .75rem;
+}
+
+.tw-Follow-Wrapper__text__username {
+	font-size: 1rem - .35rem;
+	opacity: .5;
+}
+
+.tw-Follow-Wrapper__follow {
+	display: flex;
+	align-items: flex-start;
+}
+
+.tw-Follow-Wrapper__follow-button {
+	appearance: none;
+	border: none;
+	background-color: white;
+	border-radius: 3rem;
+	padding: .3rem .8rem;
+	font-weight: bold;
+	font-size: .75rem;
+	margin-left: 1rem;
+	cursor: pointer;
+	transition: opacity 200ms ease-in, background-color 250ms ease-in;
+}
+
+.tw-Follow-Wrapper__follow-button:hover {
+	opacity: .8;
+}
+
+.button--followed {
+	background-color: $button-b-followed;
+	color: inherit;
+}
+
+.button--followed:hover {
+	background-color: rgba($color: #3f0303, $alpha: .4);
+	border: 1px solid #8a1212;
+}
+
+.button--followed:hover .button--follow-state {
+	display: none;
+}
+
+.button--stop-following {
+	display: none;
+}
+
+.button--followed:hover .button--stop-following {
+	display: inline-block;
+}
